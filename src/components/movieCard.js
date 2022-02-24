@@ -39,7 +39,7 @@ const MovieCard = ({ movieData }) => {
             <Chip
               label={actor.name}
               avatar={
-                <Avatar src={`/avatar/${actor.name.replace(" ", "")}.png`} />
+                <Avatar src={`/avatar/${actor.name.replace(/\s+/g, "")}.png`} />
               }
               color="primary"
               sx={{ fontSize: "h5.fontSize" }}
@@ -51,7 +51,7 @@ const MovieCard = ({ movieData }) => {
       <CardMedia
         component="img"
         sx={{ height: "auto" }}
-        image={`/moviePosters/${name.replace(" ", "")}.jpg`}
+        image={`/moviePosters/${name.replace(/\s+/g, "")}.jpg`}
       />
     </Card>
   );

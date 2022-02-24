@@ -57,7 +57,7 @@ const ActorCard = ({ actorData }) => {
       <CardMedia
         component="img"
         sx={{ height: "auto" }}
-        image={`/actorPosters/${name.replace(" ", "")}.jpg`}
+        image={`/actorPosters/${name.replace(/\s+/g, "")}.jpg`}
       />
     </Card>
   );
