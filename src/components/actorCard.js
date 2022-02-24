@@ -41,9 +41,10 @@ const ActorCard = ({ actorData }) => {
             justifyContent="center"
             spacing={2}
           >
-            {movies.map((movie) => {
+            {movies.map((movie, index) => {
               return (
                 <Chip
+                  key={index}
                   label={movie.name}
                   color="info"
                   sx={{ fontSize: "h5.fontSize" }}
