@@ -9,7 +9,7 @@ const NavBar = () => {
       <AppBar position="fixed" sx={{ backgroundColor: "#263238" }}>
         <Toolbar>
           <Container>
-            <Tabs value={active} textColor="white" centered>
+            <Tabs value={active} textColor="inherit" centered>
               <Tab label="Movies" value="/" to="/" component={Link} />
               <Tab
                 label="Actors"
