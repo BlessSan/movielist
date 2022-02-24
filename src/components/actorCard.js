@@ -1,17 +1,12 @@
 import {
   Card,
   CardContent,
-  Typography,
   Chip,
   CardHeader,
-  sizing,
   CardMedia,
-  Container,
-  Avatar,
   Stack,
   Box,
   Divider,
-  Grid,
 } from "@mui/material";
 
 const ActorCard = ({ actorData }) => {

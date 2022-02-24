@@ -1,7 +1,5 @@
 import "./App.css";
-import Movies from "./pages/moviesList";
-import Actors from "./pages/actorsList";
-import { Box, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import NavBar from "./components/navbar";
 import { Outlet } from "react-router-dom";
 function App() {
